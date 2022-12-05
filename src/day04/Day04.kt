@@ -1,5 +1,3 @@
-@file:Suppress("ConstPropertyName")
-
 package day04
 
 import readInput
@@ -18,8 +16,6 @@ private infix fun IntRange.fullyContains(other: IntRange): Boolean =
 
 private infix fun IntRange.overlaps(other: IntRange): Boolean =
     this.contains(other.first) || other.contains(this.first)
-
-private
 
 fun main() {
     fun part1(input: List<String>) = input
